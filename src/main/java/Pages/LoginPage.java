@@ -23,7 +23,6 @@ WebDriver driver;
 	private WebElement welcomebutton;
 	
 	
-	
 	@FindBy(xpath="//div//ul//li[3]/a[1]")
 	private WebElement logoutbutton;
 	
