@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 	
 WebDriver driver;
-	
+	// finding the webelement on webpage.
 	@FindBy(id="txtUsername")
 	private WebElement useranme;
 	
