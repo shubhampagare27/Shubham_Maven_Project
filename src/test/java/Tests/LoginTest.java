@@ -14,7 +14,7 @@ import Pages.LoginPage;
 
 
 public class LoginTest extends BaseTest{
-	
+	//This is test class.
 	public LoginPage lp;
 	
 	
