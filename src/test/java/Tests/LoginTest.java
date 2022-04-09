@@ -15,8 +15,9 @@ import Pages.LoginPage;
 
 public class LoginTest extends BaseTest{
 	//This is test class.
-	public LoginPage lp;
 	
+	public LoginPage lp;
+    	
 	
 	@Test 
 	  public void login() throws InterruptedException {
@@ -27,8 +28,4 @@ public class LoginTest extends BaseTest{
 			Assert.assertFalse(false);
 			
 	  }
-	   
-	 
-	  
-
 }
