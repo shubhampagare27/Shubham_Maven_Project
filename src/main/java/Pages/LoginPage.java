@@ -7,23 +7,23 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 	// hii this is shubham's code
-WebDriver driver;
+public static WebDriver driver;
 	// finding the webelement on webpage.
-	@FindBy(id="txtUsername")
+	@FindBy(name="username")
 	private WebElement useranme;
 	
-	@FindBy(xpath="//*[@id='txtPassword']")
+	@FindBy(xpath="//*[@name='password']")
 	private WebElement password;
 	
-	@FindBy(xpath="//*[@id='btnLogin']")
+	@FindBy(xpath="//*[@type='submit']")
 	private WebElement loginButton;
 	
 	
-	@FindBy(xpath="//a[@id=\'welcome']")
-	private WebElement welcomebutton;
+	@FindBy(xpath="//span[@class='oxd-userdropdown-tab']")
+	private WebElement profile;
 	
 	
-	@FindBy(xpath="//div//ul//li[3]/a[1]")
+	@FindBy(xpath="//a[text()='Logout']")
 	private WebElement logoutbutton;
 	
 	public LoginPage(WebDriver driver) {
@@ -38,7 +38,7 @@ WebDriver driver;
 		password.sendKeys(pass);
 		loginButton.click();
 		Thread.sleep(3000);
-		welcomebutton.click();
+		profile.click();
 		Thread.sleep(3000);
 		logoutbutton.click();
 		
